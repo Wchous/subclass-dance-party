@@ -15,7 +15,7 @@ $(document).ready(function() {
      * A new object of the given type will be created and added
      * to the stage.
      */
-    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    var dancerMakerFunctionName = $(this).data('makeBlinkyDancer');
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
@@ -28,6 +28,34 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+  });
+
+  $('.addSecondDancerButton').on('click', function(event) {
+
+    var jayZDancerMaker = $(this).data('FILL_ME_IN');
+
+    var jayZMakerFunction = window[dancerMakerFunctionName];
+
+    var jayZDancer = dancerMakerFunction(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(jayZDancer.$node);
+  });
+
+  $('addThirdDancerButton').on('click', function(event) {
+
+    var jayZChildMaker = $(this).data('FILL_ME_IN');
+
+    var jayZChildMakerFunction = window[dancerMakerFunctionName];
+    
+    var jayChild = dancerMakerFunction(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(jayChild.$node);
   });
 });
 
