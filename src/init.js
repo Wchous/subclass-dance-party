@@ -15,14 +15,14 @@ $(document).ready(function() {
      * A new object of the given type will be created and added
      * to the stage.
      */
-    var dancerMakerFunctionName = $(this).data('makeBlinkyDancer');
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
@@ -30,32 +30,32 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
-  $('.addSecondDancerButton').on('click', function(event) {
+  // $('.addSecondDancerButton').on('click', function(event) {
 
-    var jayZDancerMaker = $(this).data('FILL_ME_IN');
+  //   var jayZDancerMaker = $(this).data('FILL_ME_IN');
 
-    var jayZMakerFunction = window[dancerMakerFunctionName];
+  //   var jayZMakerFunction = window[dancerMakerFunctionName];
 
-    var jayZDancer = dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
-      Math.random() * 1000
-    );
-    $('body').append(jayZDancer.$node);
-  });
+  //   var jayZDancer = dancerMakerFunction(
+  //     $("body").height() * Math.random(),
+  //     $("body").width() * Math.random(),
+  //     Math.random() * 1000
+  //   );
+  //   $('body').append(jayZDancer.$node);
+  // });
 
-  $('addThirdDancerButton').on('click', function(event) {
+  // $('addThirdDancerButton').on('click', function(event) {
 
-    var jayZChildMaker = $(this).data('FILL_ME_IN');
+  //   var jayZChildMaker = $(this).data('FILL_ME_IN');
 
-    var jayZChildMakerFunction = window[dancerMakerFunctionName];
+  //   var jayZChildMakerFunction = window[dancerMakerFunctionName];
     
-    var jayChild = dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
-      Math.random() * 1000
-    );
-    $('body').append(jayChild.$node);
-  });
+  //   var jayChild = dancerMakerFunction(
+  //     $("body").height() * Math.random(),
+  //     $("body").width() * Math.random(),
+  //     Math.random() * 1000
+  //   );
+  //   $('body').append(jayChild.$node);
+  // });
 });
 
