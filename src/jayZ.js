@@ -4,12 +4,15 @@ var jayZ = function(top, left, timeBetweenSteps) {
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
   makeDancer.call(this, top, left, timeBetweenSteps);
+  //this.$node = $('<span class="jayZ"></span>');
 
   
-  this.step()
-
+  this.step();
+  this.$node.removeClass('dancer');
+  this.$node.addClass('jayZ');
   //var oldStep = blinkyDancer.step;
-  
+  //this.attr = $('#jayZ');
+  //newimg.css({'background-image': 'url(' + "https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png" + ')'});
 };
 
   jayZ.prototype = Object.create(makeDancer.prototype);
@@ -24,5 +27,9 @@ var jayZ = function(top, left, timeBetweenSteps) {
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
+     //this.$node.css({'background-image': 'url(' + "https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png" + ')'});
      this.$node.toggle();
    };
+  jayZ.prototype.lineUp = function() {
+  
+  }  

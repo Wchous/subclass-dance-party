@@ -26,3 +26,15 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.jayZ{
+/* background: url(https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png) no-repeat center center fixed;*/  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+.baby{
+/*  background: url(https://kenyatalk.s3.amazonaws.com/2017/07/173063_6bf339daa16d73ce19d0e0bf9e6e0cca.png) no-repeat center center fixed;
+*/
+  border:10px solid green;
+  border-radius:10px;
+  position:absolute;
+}

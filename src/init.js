@@ -32,18 +32,18 @@ $(document).ready(function() {
 
   // $('.addSecondDancerButton').on('click', function(event) {
 
-  //   var jayZDancerMaker = $(this).data('FILL_ME_IN');
+  //   var jayZDancerMaker = $(this).data('jayZ-dancer-maker-function-name');
 
-  //   var jayZMakerFunction = window[dancerMakerFunctionName];
 
-  //   var jayZDancer = dancerMakerFunction(
+  //   var jayZMakerFunction = window[jaydancerMakerFunctionName];
+
+  //   var jayZDancer = new dancerMakerFunction(
   //     $("body").height() * Math.random(),
   //     $("body").width() * Math.random(),
   //     Math.random() * 1000
   //   );
   //   $('body').append(jayZDancer.$node);
   // });
-
   // $('addThirdDancerButton').on('click', function(event) {
 
   //   var jayZChildMaker = $(this).data('FILL_ME_IN');

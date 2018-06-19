@@ -4,12 +4,14 @@ var baby = function(top, left, timeBetweenSteps) {
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
   makeDancer.call(this, top, left, timeBetweenSteps);
-
+  //this.$node = $('<span class="baby"></span>');
   
   this.step()
+  this.$node.removeClass('dancer');
+  this.$node.addClass('baby');
 
   //var oldStep = blinkyDancer.step;
-  
+  //this.attr = $('#baby');
 };
 
   baby.prototype = Object.create(makeDancer.prototype);
@@ -26,3 +28,6 @@ var baby = function(top, left, timeBetweenSteps) {
     // other effects you can use on a jQuery-wrapped html tag.
      this.$node.toggle();
    };
+  baby.prototype.lineUp = function() {
+
+  }
