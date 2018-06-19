@@ -7,7 +7,8 @@ var baby = function(top, left, timeBetweenSteps) {
   //this.$node = $('<span class="baby"></span>');
   
   this.step()
-  this.$node.removeClass('dancer');
+  this.$node.append('<img src = "https://kenyatalk.s3.amazonaws.com/2017/07/173063_6bf339daa16d73ce19d0e0bf9e6e0cca.png">');
+  //this.$node.removeClass('dancer');
   this.$node.addClass('baby');
 
   //var oldStep = blinkyDancer.step;

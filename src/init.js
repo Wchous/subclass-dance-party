@@ -28,6 +28,17 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    
+  });
+  
+  $('.lineUpButton').on('click', function(){
+    window.dancers.push(this.dancer)
+    //console.log(window.dancers)
+    var yAxis = 50
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].setPostion(yAxis , 400)
+      yAxis += 150 
+    }
   });
 
   // $('.addSecondDancerButton').on('click', function(event) {

@@ -8,9 +8,10 @@ var jayZ = function(top, left, timeBetweenSteps) {
 
   
   this.step();
-  this.$node.removeClass('dancer');
+  this.$node.append('<img src = "https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png">')
   this.$node.addClass('jayZ');
-  //var oldStep = blinkyDancer.step;
+  
+//var oldStep = blinkyDancer.step;
   //this.attr = $('#jayZ');
   //newimg.css({'background-image': 'url(' + "https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png" + ')'});
 };
@@ -31,5 +32,16 @@ var jayZ = function(top, left, timeBetweenSteps) {
      this.$node.toggle();
    };
   jayZ.prototype.lineUp = function() {
-  
+    
+    // var array = [];
+    // var counter = 1;
+    // array.push(document.getElementsByClassName('jayZ'));
+    // for (var i = 0; i < array.length; i++) {
+    //   array[i].top = $(window).height - counter;
+    //   array[i].left = $(window).width + 1;
+    //   counter = counter + 1;
+    // }
+    // array.forEach(function(element) {
+    //   $(element).css('right:0');
+    // });
   }  

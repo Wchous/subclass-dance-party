@@ -10,7 +10,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addSecondDancerButton, .addThirdDancerButton, .addDancerButton {
+.title, .addSecondDancerButton, .addThirdDancerButton, .addDancerButton, .lineUpButton {
   padding:5px 12px;
   float:right;
 }
@@ -22,19 +22,21 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:0px solid red;
+  border-radius:0px;
+  height: 50%
+  width:50% ;
   position:absolute;
 }
 .jayZ{
-/* background: url(https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png) no-repeat center center fixed;*/  border:10px solid blue;
-  border-radius:10px;
+/* background: url(https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png) no-repeat center center fixed;*/  border:0px solid blue;
+  border-radius:0px;
   position:absolute;
 }
 .baby{
 /*  background: url(https://kenyatalk.s3.amazonaws.com/2017/07/173063_6bf339daa16d73ce19d0e0bf9e6e0cca.png) no-repeat center center fixed;
 */
-  border:10px solid green;
-  border-radius:10px;
+  border:0px solid green;
+  border-radius:0px;
   position:absolute;
 }

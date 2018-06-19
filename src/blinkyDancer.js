@@ -5,7 +5,7 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   // so we must keep a copy of the old version of this function
   makeDancer.call(this, top, left, timeBetweenSteps);
 
-  
+  this.$node.append('<img src = "http://helloitscharlie.com/assets/img/year-of-the-black-girl/Solange.png" style="width:250px;height:auto">')
   this.step()
 
   //var oldStep = blinkyDancer.step;
