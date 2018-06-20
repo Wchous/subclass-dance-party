@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   });
 
-  var jayZSound = new Audio('/Users/student/Desktop/hratx35-subclass-dance-party/src/jayz_itsyoboy.wav')
+  var jayZSound = new Audio('/Users/williamhoustoun/Desktop/HR/hratx35-subclass-dance-party/src/jayz_itsyoboy.wav')
   $('body').on('mouseover','.jayZ',function() {
     jayZSound.play()
   })  
@@ -54,7 +54,7 @@ $(document).ready(function() {
     //console.log(window.dancers)
     var yAxis = 50
     window.dancers.forEach(function(dancer,index){
-      dancer.setPosition(yAxis, 400)
+      dancer.setPosition(yAxis, 50)
       yAxis += 150
     })
   })
