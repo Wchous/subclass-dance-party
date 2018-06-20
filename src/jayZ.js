@@ -10,11 +10,15 @@ var jayZ = function(top, left, timeBetweenSteps) {
   this.step();
   this.$node.append('<img src = "https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png">')
   this.$node.addClass('jayZ');
-  
+  this.$node.mouseover(function() {
+    this.sing()
+  }.bind(this))
+  //this.sing = new Audio('/Users/student/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/jayz_itsyoboy.mp3') 
 //var oldStep = blinkyDancer.step;
   //this.attr = $('#jayZ');
   //newimg.css({'background-image': 'url(' + "https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png" + ')'});
 };
+  var jayZSound = new Audio('/Users/student/Desktop/hratx35-subclass-dance-party/src/jayz_itsyoboy.wav')
 
   jayZ.prototype = Object.create(makeDancer.prototype);
 
@@ -31,6 +35,10 @@ var jayZ = function(top, left, timeBetweenSteps) {
      //this.$node.css({'background-image': 'url(' + "https://kenyatalk.s3.amazonaws.com/2017/07/172628_3488def8b6601537d317d219d4b756c5.png" + ')'});
      this.$node.toggle();
    };
+  jayZ.prototype.sing = function () {
+    console.log(this)  
+    this.jayZSound.play()
+  }
   jayZ.prototype.lineUp = function() {
     
     // var array = [];

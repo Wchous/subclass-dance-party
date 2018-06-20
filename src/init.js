@@ -29,44 +29,25 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
     
+
+    window.dancers.push(dancer)
+
   });
-  
+
+  var jayZSound = new Audio('/Users/student/Desktop/hratx35-subclass-dance-party/src/jayz_itsyoboy.wav')
+  $('body').on('mouseover','.jayZ',function() {
+    jayZSound.play()
+  })  
+
   $('.lineUpButton').on('click', function(){
-    window.dancers.push(this.dancer)
+    
     //console.log(window.dancers)
     var yAxis = 50
-    for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].setPostion(yAxis , 400)
-      yAxis += 150 
-    }
-  });
+    window.dancers.forEach(function(dancer,index){
+      dancer.setPosition(yAxis, 400)
+      yAxis += 150
+    })
+  })
+});  
 
-  // $('.addSecondDancerButton').on('click', function(event) {
-
-  //   var jayZDancerMaker = $(this).data('jayZ-dancer-maker-function-name');
-
-
-  //   var jayZMakerFunction = window[jaydancerMakerFunctionName];
-
-  //   var jayZDancer = new dancerMakerFunction(
-  //     $("body").height() * Math.random(),
-  //     $("body").width() * Math.random(),
-  //     Math.random() * 1000
-  //   );
-  //   $('body').append(jayZDancer.$node);
-  // });
-  // $('addThirdDancerButton').on('click', function(event) {
-
-  //   var jayZChildMaker = $(this).data('FILL_ME_IN');
-
-  //   var jayZChildMakerFunction = window[dancerMakerFunctionName];
-    
-  //   var jayChild = dancerMakerFunction(
-  //     $("body").height() * Math.random(),
-  //     $("body").width() * Math.random(),
-  //     Math.random() * 1000
-  //   );
-  //   $('body').append(jayChild.$node);
-  // });
-});
 
