@@ -5,7 +5,8 @@ var baby = function(top, left, timeBetweenSteps) {
   // so we must keep a copy of the old version of this function
   makeDancer.call(this, top, left, timeBetweenSteps);
   //this.$node = $('<span class="baby"></span>');
-  
+  this.left = left
+  this.top = top
   this.step()
   this.$node.append('<img src = "https://kenyatalk.s3.amazonaws.com/2017/07/173063_6bf339daa16d73ce19d0e0bf9e6e0cca.png">');
   //this.$node.removeClass('dancer');

@@ -1,5 +1,6 @@
 body, html{
   height:100%;
+  overflow: hidden;
 }
 body{
   margin: 0px;
@@ -39,4 +40,16 @@ body, a:link, a:visited, a:active{
   border:0px solid green;
   border-radius:0px;
   position:absolute;
+}
+.vertical.flip-container {
+  position: relative;
+}
+.back {
+  transform: rotateX(180deg);
+}
+.vertical.flip-container .flipper {
+  transform-origin: 100% 213.5px; /* half of height */
+}
+.vertical.flip-container:hover .flipper {
+  transform: rotateX(-180deg);
 }

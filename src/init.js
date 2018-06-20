@@ -27,10 +27,20 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+
+
     $('body').append(dancer.$node);
     
 
     window.dancers.push(dancer)
+
+    for(var i = 0; i<window.dancers.length;i++){
+      if(window.dancers.length>2){
+        if(window.dancers[i].left < window.dancers[i+1].left || window.dancers[i].top > window.dancers[i+1].top){
+          window.dancers[i].$node.addClass('back')
+      }
+    }
+    }
 
   });
 
